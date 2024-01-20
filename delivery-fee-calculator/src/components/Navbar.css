@@ -1,0 +1,60 @@
+.navbar {
+    padding: 1rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.navbar h1 {
+    letter-spacing: 1px;
+    padding: 0.1rem;
+    font-size: 18px;
+    font-weight: 900;
+    font-family: "Josefin Sans", sans-serif;
+    background: linear-gradient(to right,#BFB8DA 10%, #56c596 10%, #7BE495 10%, #96D7D6 20%, #5E72EB 20%, #4ADADE 20%, #C2C8C5 20%, #A8DEE0 80%, #FF9190 20%);
+    background-size: auto auto;
+    background-clip: border-box;
+    background-size: 200% auto;
+    background-clip: text;
+    text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip 5s linear infinite;
+    display: inline-block;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 2vmax;
+}
+
+.navbar ul a {
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+
+@media (max-width:600px) {
+  h1{
+    font-size: 15px;
+  }
+}
+@media (max-width:850px) {
+  h1{
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 418px) {
+  .navbar {
+    padding: 1rem .4rem;
+    justify-content: space-between;
+  }
+}
