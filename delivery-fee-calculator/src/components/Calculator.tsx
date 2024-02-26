@@ -23,7 +23,7 @@ const Calculator = () => {
 
 
     if (isRushTime) {
-      finalDeliveryCharge = finalDeliveryCharge * 1.2 //during rush time delivery rate is 1.2 times higher than the regular delivery fee
+      finalDeliveryCharge = finalDeliveryCharge * 1.2 // 20% extra charge will be added if the time is rush time
     }
 
     if (Number(cartValue) === 100 || Number(cartValue) > 100) {
